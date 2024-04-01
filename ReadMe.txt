@@ -1,13 +1,12 @@
+It's just did basic implementation: without loggers, configs are hardcoded etc.
 
-It's just basic implementation without loggers. Configs are hardcoded etc.
+To run the project please execute the following commands:
+docker-compose build
+docker compose up   
+Wait until rabitmq is up
+
+Open http://localhost:8080/track to get 1px image
+
+To test the project in debug mode please run rabbitmq before.
 
 
-I have created dockers for the API and Consumer projects
-but there is some issue with rabitmq connection string, it doesnt work properly from docker container. 
-I will play with it a bit later
-
-To test project:
-1. docker compose up => it will run rabitmq docker container
-
-2. Select multiple startup projects on solution. Chose API and Consumer
-3. Run it in debug mode 
