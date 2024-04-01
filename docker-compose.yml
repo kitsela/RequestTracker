@@ -1,0 +1,25 @@
+
+services:
+  rabbitmq:
+    container_name: "rabbitmqcontainer"
+    image: rabbitmq:management
+    hostname: "rabbitmq"
+    ports:
+        - '5672:5672'
+        - '15672:15672'
+
+  # web-api:
+  #   container_name: request-tracker-web-api
+  #   image: request-tracker-web-api
+  #   build:
+  #     dockerfile: RequestTracker.API/Dockerfile
+  #   depends_on:
+  #     - rabbitmq
+
+  # consumer:
+  #   container_name: request-tracker-consumer
+  #   image: request-tracker-consumer
+  #   build:
+  #     dockerfile: RequestTracker.Consumer/Dockerfile
+  #   depends_on:
+  #     - rabbitmq
