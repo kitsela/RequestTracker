@@ -1,4 +1,4 @@
-It's just did basic implementation: without loggers, configs are hardcoded etc.
+It's just basic implementation: without loggers, configs are hardcoded etc.
 
 To run the project please execute the following commands:
 docker-compose build
